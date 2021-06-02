@@ -1,12 +1,220 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Tajawal:wght@500&display=swap");
 
-body {
-  font-family: "Poppins", sans-serif;
+/* Tipografía */
+/* @import url("https://fonts.googleapis.com/css2?family="); */
+
+/* Variables */
+:root {
+  --primario: #ff6b35;
+  --secundario: #050404;
+  --font-base: sans-serif;
+  --font-headings: inherit; /* Cambiar */
+  --h1: 48px;
+  --h2: 39px;
+  --h3: 31px;
+  --h4: 25px;
+  --h5: 20px;
+  --h6: 16px;
+  --section-height: 600px;
+  /*  --transition: all 0.4s ease-in-out; */
 }
+
+/* Base */
+body {
+  font-family: var(--font-base);
+  /* background-color: var(--primario); */
+}
+
 h1,
 h2,
 h3,
 h4,
-h5.h6 {
-  font-family: "Tajawal", sans-serif;
+h5,
+h6 {
+  font-family: var(--font-headings);
 }
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: var(--h6);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Componentes */
+/* Header */
+.header {
+  display: flex;
+  min-height: var(--section-height);
+}
+
+.header::before {
+  content: "";
+  width: 40px;
+  background-color: var(--primario);
+}
+
+.caja-container {
+  flex: 4;
+  display: grid;
+  place-content: center;
+}
+
+.caja {
+  max-width: 200px;
+}
+
+/* Nav */
+.nav {
+  flex: 1;
+  display: grid;
+  place-content: center;
+  background-color: var(--secundario);
+}
+
+.logo-container {
+  display: grid;
+  place-content: start;
+}
+.logo {
+  max-width: 40px;
+  margin-bottom: 2em;
+}
+
+.nav ul a {
+  color: white;
+  line-height: 1.8;
+}
+
+/* Main */
+.main {
+  max-width: 90vw;
+  margin: 3rem auto;
+  height: auto;
+}
+
+/* Proyectos */
+.proyectos {
+  margin: auto;
+}
+
+.proyectos h2,
+.proyectos h3 {
+  padding: 20px;
+}
+
+.proyectos h2 {
+  /* font-family: monospace;
+  font-size: 20px; */
+}
+.proyectos h3 {
+  /* font-family: monospace;
+  font-size: 20px; */
+}
+
+.proyectos h3 {
+  padding: 20px;
+  /* font-family: monospace;
+  font-size: 20px; */
+}
+.proyectos-container {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 600px) {
+  .proyectos-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* About */
+.about {
+  margin: auto;
+}
+
+.about > * {
+  padding: 20px;
+  /* font-family: monospace;
+  font-size: 20px; */
+}
+
+.about h2 {
+  /* font-family: monospace;
+  font-size: 20px; */
+}
+
+.about figure {
+  position: relative;
+}
+
+.about img {
+  width: 100%;
+  object-fit: contain;
+  opacity: 0.4;
+}
+
+.about figcaption {
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: fit-content;
+  padding-top: 250px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: rgb(0, 0, 0);
+}
+
+/* Contacto */
+.footer {
+  position: relative;
+  max-width: 90vw;
+  margin: auto;
+  padding: 20px;
+}
+
+.contacto {
+  display: grid;
+  align-content: center;
+  margin: 2rem auto;
+}
+
+.contacto h2 {
+  padding-bottom: 2rem;
+}
+
+.contacto div {
+  display: grid;
+}
+
+.contacto div a {
+  font-size: 1rem;
+  line-height: 2;
+}
+
