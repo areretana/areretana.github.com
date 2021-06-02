@@ -68,6 +68,12 @@ figure{
   transform:scale(1.2);
 }*/
 
+.transproy {
+  transition:transform 1s;
+ }
+.transproy:hover {
+  transform: scale(1.2);
+}
 /* Componentes */
 /* Header */
 .header {
