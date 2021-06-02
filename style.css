@@ -102,6 +102,7 @@ a {
 .logo-container {
   display: grid;
   place-content: start;
+  text-align: right;
 }
 .logo {
   max-width: 40px;
