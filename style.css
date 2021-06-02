@@ -61,12 +61,6 @@ h6 {
 a {
   text-decoration: none;
 }
-figure{
-    transition: transform 1s;
-}
-/*figure:hover {
-  transform:scale(1.2);
-}*/
 
 .transproy {
   transition:transform 1s;
