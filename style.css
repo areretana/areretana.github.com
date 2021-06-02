@@ -64,9 +64,9 @@ a {
 figure{
     transition: transform 1s;
 }
-figure:hover {
+/*figure:hover {
   transform:scale(1.2);
-}
+}*/
 
 /* Componentes */
 /* Header */
