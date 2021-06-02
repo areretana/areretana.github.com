@@ -1,6 +1,9 @@
 /* Tipografía */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Tajawal:wght@500&display=swap");
 
+/* Tipografía */
+/* @import url("https://fonts.googleapis.com/css2?family="); */
+
 /* Variables */
 :root {
   --primario: #ff6b35;
@@ -215,3 +218,23 @@ a {
 .contacto div a span {
   padding-right: 1ch;
 }
+
+.contacto {
+  display: grid;
+  align-content: center;
+  margin: 2rem auto;
+}
+
+.contacto h2 {
+  padding-bottom: 2rem;
+}
+
+.contacto div {
+  display: grid;
+}
+
+.contacto div a {
+  font-size: 1rem;
+  line-height: 2;
+}
+
