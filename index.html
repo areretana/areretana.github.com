@@ -1,42 +1,134 @@
 <!DOCTYPE html>
-
 <html lang="es-MX">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arelí Retana - Comunicación Visual</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body class="layout">
-    <div>
-      <img
-        src="https://res.cloudinary.com/dpiqrpito/image/upload/v1614711806/Portafolio/caja-23_ysvt51.png"
-        alt="caja"
-        class="caja"
-        height="248"
-        width="332"
-      />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="caja-container">
+      <img src="https://res.cloudinary.com/dpiqrpito/image/upload/v1614711806/Portafolio/caja-23_ysvt51.png""
+        alt="" class=" caja">
     </div>
     <nav class="nav">
-      <img
-        src="https://res.cloudinary.com/dpiqrpito/image/upload/v1614712046/Portafolio/Boton-24_kbqvhr.png"
-        alt="logo"
-        class="logo"
-        height="175"
-        width="62"
-      />
       <ul class="menu" role="list">
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Experimentation</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Newsletter</a></li>
-        <li><a href="#">Contact me</a></li>
+        <div class="logo-container">
+          <img src="https://res.cloudinary.com/dpiqrpito/image/upload/v1614712046/Portafolio/Boton-24_kbqvhr.png" alt="logo" class="logo" />
+        </div>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#experimentacion">Experimentation</a></li>
+        <li><a href="/#about">About me</a></li>
+        <!-- <li><a href="/">Newsletter</a></li> -->
+        <li><a href="/#contact">Contact me</a></li>
       </ul>
     </nav>
-  </body>
+  </header>
+  <main class="main">
+    <section class="proyectos" id="projects">
+      <h2>Mis proyectos</h2>
+      <!-- categoria de proyecto inicio -->
+      <div>
+        <h3>Editorial</h3>
+        <div class="proyectos-container">
+          <figure>
+            <img src="https://placeimg.com/400/400/any" alt="">
+          </figure>
+          <figure>
+            <img src="https://placeimg.com/400/400/any" alt="">
+          </figure>
+          <figure>
+            <img src="https://placeimg.com/400/400/any" alt="">
+          </figure>
+          <figure>
+            <img src="https://placeimg.com/400/400/any" alt="">
+          </figure>
+          <figure>
+            <img src="https://placeimg.com/400/400/any" alt="">
+          </figure>
+        </div>
+        <!-- categoria de proyecto fin -->
+
+        <!-- categoria de proyecto inicio -->
+        <div>
+          <h3>Ilustracion</h3>
+          <div class="proyectos-container">
+            <figure>
+              <img src="https://placeimg.com/400/400/any" alt="">
+            </figure>
+            <figure>
+              <img src="https://placeimg.com/400/400/any" alt="">
+            </figure>
+            <figure>
+              <img src="https://placeimg.com/400/400/any" alt="">
+            </figure>
+            <figure>
+              <img src="https://placeimg.com/400/400/any" alt="">
+            </figure>
+            <figure>
+              <img src="https://placeimg.com/400/400/any" alt="">
+            </figure>
+          </div>
+          <!-- categoria de proyecto fin -->
+
+          <!-- categoria de proyecto inicio -->
+        <div>
+          <h3>Branding</h3>
+          <div class="proyectos-container">
+            <figure>
+              <img src="https://placeimg.com/400/400/any" alt="">
+            </figure>
+            <figure>
+              <img src="https://placeimg.com/400/400/any" alt="">
+            </figure>
+            <figure>
+              <img src="https://placeimg.com/400/400/any" alt="">
+            </figure>
+            <figure>
+              <img src="https://placeimg.com/400/400/any" alt="">
+            </figure>
+            <figure>
+              <img src="https://placeimg.com/400/400/any" alt="">
+            </figure>
+          </div>
+          <!-- categoria de proyecto fin -->
+
+        </div>
+
+    </section>
+    <!-- <section class="experimentacion" id="experimentacion">
+      <p>experimentacion</p>
+      TODO
+    </section> -->
+    <section class="about" id="about">
+
+      <h2>About me</h2>
+      <figure>
+        <img src="https://placeimg.com/600/400/any" alt="">
+        <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores possimus nemo itaque doloribus libero dolore ab magni, eveniet nobis accusamus omnis debitis totam repellat repellendus quam natus asperiores provident molestiae, fugit nostrum at! Facere debitis dolorem molestias quasi eligendi similique.</figcaption>
+      </figure>
+    </section>
+  </main>
+  <footer class="footer">
+  <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <div>
+          <a href="mailto:email@gmail.com"
+            ><span>Mail:</span>email@gmail.com
+          </a>
+          <a href="tel:55555555"><span>Celular:</span>55555555</a>
+          <a href="https://instagram.com/xyz"
+            ><span>Instagram:</span>xyz</a
+          >
+        </div>
+      </section>
+  </footer>
+  <!-- aqui empieza -->
+</body>
+<script src="main.js"></script>
+
 </html>

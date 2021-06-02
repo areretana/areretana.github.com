@@ -1,28 +1,25 @@
 /* Tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Tajawal:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Tajawal:wght@500&display=swap");
 
 /* Variables */
 :root {
-  --primario: #38e925;
-  --primario-claro: #a2f598;
-  --primario-fuerte: #279e19;
-  --secundario: #161917;
-  --secundario-claro: #b2b3b2;
-  --secundario-fuerte: #000000;
-  --bg: #ffffff;
-  --font-textos: 'Tajawal';
-  --font-headings: 'Poppins';
-  --h1: 121px;
-  --h2: 81px;
-  --h3: 54px;
-  --h4: 36px;
-  --h5: 24px;
+  --primario: #ff6b35;
+  --secundario: #050404;
+  --font-base: "Poppins", sans-serif;
+  --font-headings: "Tajawal", sans-serif;
+  --h1: 48px;
+  --h2: 39px;
+  --h3: 31px;
+  --h4: 25px;
+  --h5: 20px;
   --h6: 16px;
+  --section-height: 600px;
+  --transition: all 0.4s ease-in-out;
 }
 
 /* Base */
 body {
-  font-family: var(--font-textos);
+  font-family: var(--font-base);
 }
 
 h1,
@@ -31,13 +28,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-titulos);
+  font-family: var(--font-headings);
 }
 
-a {
-  text-decoration: none;
-}
-/*
 h1 {
   font-size: var(--h1);
 }
@@ -60,84 +53,165 @@ h5 {
 
 h6 {
   font-size: var(--h6);
-} */
+}
+
+a {
+  transition: var(--transition);
+  text-decoration: none;
+}
 
 /* Componentes */
-.layout {
+/* Header */
+.header {
   display: flex;
-  /* background-color: var(--primario); */
+  height: var(--section-height);
 }
 
-.layout div {
-  flex: 1;
-}
-.caja {
-  margin: auto;
-}
-
-.nav {
-  background-color: palegoldenrod;
+.header::before {
+  content: "";
+  width: 40px;
+  background-color: var(--primario);
 }
 
-.logo {
-  object-fit: contain;
-}
-
-.menu {
-  background-color: hotpink;
-}
-
-/* Utilities */
-.flex {
-  display: flex;
-}
-
-.flex-center {
-  justify-items: center;
-  align-items: center;
-}
-
-.grid {
+.caja-container {
+  flex: 4;
   display: grid;
-}
-
-.grid-center {
   place-content: center;
 }
 
-.mx-auto {
-  margin: 0 auto;
+.caja {
+  max-width: 200px;
 }
 
-.text-center {
-  text-align: center;
+/* Nav */
+.nav {
+  flex: 0 0 1;
+  display: grid;
+  place-content: center;
+  background-color: var(--secundario);
 }
 
-.font-normal {
-  font-weight: 400;
+.logo-container {
+  display: grid;
+  place-content: start;
+}
+.logo {
+  max-width: 40px;
+  margin-bottom: 2em;
 }
 
-.font-medium {
-  font-weight: 500;
+.nav ul a {
+  color: white;
+  line-height: 1.8;
 }
 
-.font-bold {
-  font-weight: 700;
+/* Main */
+.main {
+  max-width: 90vw;
+  margin: 60px auto 40px;
+  height: auto;
 }
 
-.relative {
+/* Proyectos */
+.proyectos {
+  margin: auto;
+}
+
+.proyectos h2,
+.proyectos h3 {
+  padding: 0 20px;
+}
+
+.proyectos h3,
+.proyectos div {
+  padding-top: 20px;
+}
+
+.proyectos-container {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 600px) {
+  .proyectos-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* About */
+.about {
+  margin: auto;
+}
+
+.about > * {
+  padding: 20px;
+}
+
+/*.about h2 {}*/
+
+.about figure {
   position: relative;
 }
 
-.absolute {
+.about img {
+  width: 100%;
+  object-fit: contain;
+  opacity: 0.4;
+}
+
+.about figcaption {
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+  color: rgb(0, 0, 0);
 }
 
-.hidden {
-  display: none;
-  visibility: hidden;
+.about figcaption {
+  transform: translateY(200px); /* Pixeles de espacio en eje Y */
 }
 
-.outline {
-  outline: 2px solid black;
+@media screen and (max-width: 600px) {
+  .about figcaption {
+    width: fit-content;
+    transform: translateY(10px);
+  }
+}
+
+/* Contacto */
+.footer {
+  max-width: 90vw;
+  margin: auto;
+  padding: 0 20px 20px;
+}
+
+.contacto {
+  display: grid;
+  align-content: center;
+  margin: 0 auto 40px;
+}
+
+.contacto h2 {
+  padding-bottom: inherit;
+}
+
+.contacto div {
+  display: grid;
+}
+
+.contacto div a {
+  color: inherit;
+  line-height: 1.6;
+}
+
+.contacto div a span {
+  padding-right: 1ch;
 }
