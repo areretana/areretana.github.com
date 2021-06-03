@@ -94,8 +94,9 @@ a {
 /* Nav */
 .nav {
   flex: 1;
-  position: relative;
-  top: 400px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
   display: grid;
   max-width: 110px;
   place-content: center;
