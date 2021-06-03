@@ -95,7 +95,7 @@ a {
 .nav {
   flex: 1;
   display: grid;
-  max-width: 100px;
+  max-width: 110px;
   place-content: center;
   background-color: var(--secundario);
 }
