@@ -7,6 +7,21 @@
   <title></title>
   <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <script>
+      function abririmg(img,ancho,alto){
+	
+	      //Ajustar horizontalmente
+	      var x=(screen.width/2)-(ancho/2);
+	      //Ajustar verticalmente
+	      var y=(screen.height/2)-(alto/2);
+        //Obtener URL
+        var url=img.src;
+	      window.open(url, 'popup', 'width=' + ancho + ', height=' + alto + ', left=' + x + ', top=' + y +'');
+     }
+
+   //Enviamos a la función la url, el ancho y el alto de la ventana
+   //abririmg(this,'400','200');
+</script>
 </head>
 
 <body>
@@ -37,7 +52,7 @@
         <h3>Editorial</h3>
         <div class="proyectos-container">
          
-           <div class="transproy"> <figure> <img src="https://res.cloudinary.com/dpiqrpito/image/upload/c_crop,g_center,h_4000,w_4000/v1619542719/Portafolio/paralisismock2_ezf9go.jpg" alt="">
+           <div class="transproy"> <figure> <img src="https://res.cloudinary.com/dpiqrpito/image/upload/c_crop,g_center,h_4000,w_4000/v1619542719/Portafolio/paralisismock2_ezf9go.jpg" alt="" onclick="abririmg(this)">
              </figure> </div>
            <div class="transproy">  
           <figure>
