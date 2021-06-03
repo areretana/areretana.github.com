@@ -216,6 +216,12 @@ a {
   color: rgb(0, 0, 0);
 }
 
+@media (max-width: 600px) {
+  .about figcaption {
+  padding: 20px;
+}
+}
+
 /* Contacto */
 .footer {
   position: relative;
