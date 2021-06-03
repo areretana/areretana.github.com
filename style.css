@@ -101,7 +101,7 @@ a {
 }
 .nav a:hover{
     color:#fff;
-    background-color: #f90;
+    background-color: var(--secundario);
 }
 
 .logo-container {
