@@ -1,3 +1,4 @@
+/* Tipografía */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Tajawal:wght@500&display=swap");
 
 /* Tipografía */
@@ -7,8 +8,8 @@
 :root {
   --primario: #ff6b35;
   --secundario: #050404;
-  --font-base: sans-serif;
-  --font-headings: inherit; /* Cambiar */
+  --font-base: "Poppins", sans-serif;
+  --font-headings: "Tajawal", sans-serif;
   --h1: 48px;
   --h2: 39px;
   --h3: 31px;
@@ -16,13 +17,12 @@
   --h5: 20px;
   --h6: 16px;
   --section-height: 600px;
-  /*  --transition: all 0.4s ease-in-out; */
+  --transition: all 0.4s ease-in-out;
 }
 
 /* Base */
 body {
   font-family: var(--font-base);
-  /* background-color: var(--primario); */
 }
 
 h1,
@@ -59,20 +59,15 @@ h6 {
 }
 
 a {
+  transition: var(--transition);
   text-decoration: none;
 }
 
-.transproy {
-  transition:transform 1s;
- }
-.transproy:hover {
-  transform: scale(1.2);
-}
 /* Componentes */
 /* Header */
 .header {
   display: flex;
-  min-height: var(--section-height);
+  height: var(--section-height);
 }
 
 .header::before {
@@ -135,7 +130,7 @@ a {
 /* Main */
 .main {
   max-width: 90vw;
-  margin: 3rem auto;
+  margin: 60px auto 40px;
   height: auto;
 }
 
@@ -146,23 +141,14 @@ a {
 
 .proyectos h2,
 .proyectos h3 {
-  padding: 20px;
+  padding: 0 20px;
 }
 
-.proyectos h2 {
-  /* font-family: monospace;
-  font-size: 20px; */
-}
-.proyectos h3 {
-  /* font-family: monospace;
-  font-size: 20px; */
+.proyectos h3,
+.proyectos div {
+  padding-top: 20px;
 }
 
-.proyectos h3 {
-  padding: 20px;
-  /* font-family: monospace;
-  font-size: 20px; */
-}
 .proyectos-container {
   padding: 20px;
   display: grid;
@@ -184,14 +170,9 @@ a {
 
 .about > * {
   padding: 20px;
-  /* font-family: monospace;
-  font-size: 20px; */
 }
 
-.about h2 {
-  /* font-family: monospace;
-  font-size: 20px; */
-}
+/*.about h2 {}*/
 
 .about figure {
   position: relative;
@@ -205,23 +186,56 @@ a {
 
 .about figcaption {
   position: absolute;
-  padding: 20px;
   top: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
   text-align: center;
-  width: fit-content;
-  padding-top: 1200px;
-  padding-left: 100px;
-  padding-right: 100px;
+  width: 80vw;
+  margin: auto;
   color: rgb(0, 0, 0);
+}
+
+.about figcaption {
+  transform: translateY(200px); /* Pixeles de espacio en eje Y */
+}
+
+@media screen and (max-width: 600px) {
+  .about figcaption {
+    width: fit-content;
+    transform: translateY(10px);
+  }
 }
 
 /* Contacto */
 .footer {
-  position: relative;
   max-width: 90vw;
   margin: auto;
-  padding: 20px;
+  padding: 0 20px 20px;
+}
+
+.contacto {
+  display: grid;
+  align-content: center;
+  margin: 0 auto 40px;
+}
+
+.contacto h2 {
+  padding-bottom: inherit;
+}
+
+.contacto div {
+  display: grid;
+}
+
+.contacto div a {
+  color: inherit;
+  line-height: 1.6;
+}
+
+.contacto div a span {
+  padding-right: 1ch;
 }
 
 .contacto {
