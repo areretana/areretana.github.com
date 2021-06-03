@@ -99,6 +99,10 @@ a {
   place-content: center;
   background-color: var(--secundario);
 }
+.nav a:hover{
+    color:#fff;
+    background-color: #f90;
+}
 
 .logo-container {
   display: grid;
