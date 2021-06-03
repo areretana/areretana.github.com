@@ -86,21 +86,40 @@ a {
   max-width: 200px;
 }
 
+
 /* Nav */
 .nav {
-  flex: 0 0 1;
+  flex: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
   display: grid;
+  max-width: 110px;
   place-content: center;
   background-color: var(--secundario);
+}
+.nav a:hover{
+    color:#fff;
+    background-color: var(--secundario);
 }
 
 .logo-container {
   display: grid;
   place-content: start;
+  text-align: right;
+  float:right;
+}
+.casalogo {
+  max-width: 40px;
+  margin-bottom: 0px;
+  text-align:right;
+  float: right;  
 }
 .logo {
   max-width: 40px;
   margin-bottom: 2em;
+  text-align:right;
+  float: right;
 }
 
 .nav ul a {
