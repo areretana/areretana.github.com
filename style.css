@@ -110,6 +110,12 @@ a {
   text-align: right;
   float:right;
 }
+.casalogo {
+  max-width: 40px;
+  margin-bottom: 0px;
+  text-align:right;
+  float: right;  
+}
 .logo {
   max-width: 40px;
   margin-bottom: 2em;
