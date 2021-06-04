@@ -167,7 +167,7 @@ a {
     opacity: 1;
     filter: alpha(opacity=100); /* For IE8 and earlier */
 }
-.proyectos img:hover  {
+.proyectos img.clicked  {
     opacity: 0.4;
     filter: alpha(opacity=40); /* For IE8 and earlier */
 }
