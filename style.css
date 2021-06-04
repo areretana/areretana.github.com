@@ -164,12 +164,12 @@ a {
   font-size: 20px; */
 }
 .proyectos img {
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 .proyectos img:hover  {
-    opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 .proyectos-container {
   padding: 20px;
